@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+ 	"name": "atualiza bi",
+ 	"version": "0.1",
+	"icons": { 
+  		"128" : "img/icon_128.png"
+	},
+ 	
+	 "background": {
+		"scripts": ["whats.js"]
+	},
+	 
+	 
+	 "content_scripts":[
+		 {
+			 "matches":
+				 ["https://datastudio.google.com/reporting/*"],
+				 			 
+             "js":["whats.js"]
+			
+		}
+	 
+	]
+
+}

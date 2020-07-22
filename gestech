@@ -1,0 +1,34 @@
+const div = document.querySelector("#headerMenu");
+const ul = div.querySelector("#menu");
+  
+  if(ul){
+      
+       alert('carregou o header')
+       
+       var li = ul.getElementsByTagName("li");
+       var fim = li.length //quantidade de <li> dentro de <ul id=menu>
+       var i = 0
+       
+       const conteudo = ul.querySelector("#menuid_b_5").innerText; 
+       alert(' qtde li antes do for com getelementbyid.id: '+conteudo)
+       
+       for (i; i < fim; i++){
+           var li_id = ul.getElementsByTagName("li"); 
+           var conteudo_li = ul.querySelector("li").innerText; 
+           alert('entrou no for, de : '+i+' até: '+fim+' id da li: '+li_id[i].id)
+          
+         // if(conteudo_li == "Estoques"){
+            if(li_id[i].id === 'menuid_b_5'){
+               
+                alert('achou o li estoque: ')
+                a = li_id[i].getElementsByTagName('a');
+                //li_id[i].click
+                a.click
+            
+             }
+         
+          }
+ 
+    }
+     
+
